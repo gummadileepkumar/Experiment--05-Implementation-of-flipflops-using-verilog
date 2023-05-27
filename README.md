@@ -117,54 +117,65 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 
 ## SR Flip Flop:
 ```python
-module flipflop(S,R,clock,Q,Qbar);
-input S,R,clock;
-output Q,Qbar;
-wire X,Y;
-nand(X,S,clock);
-nand(Y,R,clock);
-nand(Q,X,Qbar);
-nand(Qbar,Y,Q);
+module flipflops(S,R,clk,Q,Qbar);
+input S,R,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=S|((~R)&Q);
+Qbar=R|((~S)&(Qbar));
+end
 endmodule
 ```
 
 ## D Flip Flop:
 ```python
-module DF(D,clock,Q,Qbar);
-input D,clock;
-output Q,Qbar;
-assign Dbar = ~D;
-wire X,Y;
-nand(X,D,clock);
-nand(Y,Dbar,clock);
-nand(Q,X,Qbar);
-nand(Qbar,Y,Q);
+module flipflops(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=D;
+Qbar=~D;
+end
 endmodule
 ```
 
 ## JK Flip Flop:
 ```python
-module JK(J,K,clock,Q,Qbar);
-input J,K,clock;
-output Q,Qbar;
-wire P,S;
-nand(P,J,clock,Qbar);
-nand(S,K,clock,Q);
-nand(Q,P,Qbar);
-nand(Qbar,S,Q);
+module flipflops(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(J&(~Q))|((~K)&Q);
+Qbar=((~J)&(Qbar))|K&(~Qbar);
+end
 endmodule
 ```
 
 ## T Flip Flop:
 ```python
-module TB(T,clock,Q,Qbar);
-input T,clock;
-output Q,Qbar;
-wire A,B;
-nand(A,T,clock,Qbar);
-nand(B,T,clock,Q);
-nand(Q,A,Qbar);
-nand(Qbar,B,Q);
+module flipflops(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=(T&(~Q))|((~T)&Q);
+Qbar=((~T)&Qbar)|(T&(~Qbar));
+end
 endmodule
 ```
 
@@ -174,31 +185,31 @@ endmodule
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### SR Flip Flop:
-![model](DE_5.1.PNG)
+![model](/DE_5.1.png)
 
 ### D Flip Flop:
-![model](DE_5.2.PNG)
+![model](/DE_5.2.png)
 
 ### JK Flip Flop:
-![model](DE_5.3.PNG)
+![model](/DE_5.3.png)
 
 ### T Flip Flop:
-![model](DE_5.4.PNG)
+![model](/DE_5.4.png)
 
 
 ## TIMING DIGRAMS FOR FLIP FLOPS
 
 ### SR Flip Flop:
-![model](DE_5.5.PNG)
+![model](/DE_5.5.png)
 
 ### D Flip Flop:
-![model](DE_5.6.PNG)
+![model](/DE_5.6.png)
 
 ### Jk Flip Flop:
-![model](DE_5.7.PNG)
+![model](/DE_5.7.png)
 
 ### T Flip Flop:
-![model](DE_5.8.PNG)
+![model](/DE_5.8.png)
 
 
 ### RESULTS 
