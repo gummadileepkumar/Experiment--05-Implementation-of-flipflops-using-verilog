@@ -185,31 +185,30 @@ endmodule
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### SR Flip Flop:
-![model](/DE_5.1.png)
+![model](DE_5.1.png)
 
 ### D Flip Flop:
-![model](/DE_5.2.png)
+![model](DE_5.2.png)
 
 ### JK Flip Flop:
-![model](/DE_5.3.png)
+![model](DE_5.3.png)
 
 ### T Flip Flop:
-![model](/DE_5.4.png)
-
+![model](DE_5.4.png)
 
 ## TIMING DIGRAMS FOR FLIP FLOPS
 
 ### SR Flip Flop:
-![model](/DE_5.5.png)
+![model](DE_5.5.png)
 
 ### D Flip Flop:
-![model](/DE_5.6.png)
+![model](DE_5.6.png)
 
 ### Jk Flip Flop:
-![model](/DE_5.7.png)
+![model](DE_5.7.png)
 
 ### T Flip Flop:
-![model](/DE_5.8.png)
+![model](DE_5.8.png)
 
 
 ### RESULTS 
