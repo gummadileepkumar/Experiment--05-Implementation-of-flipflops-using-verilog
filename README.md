@@ -185,30 +185,40 @@ endmodule
 ## RTL LOGIC FOR FLIPFLOPS 
 
 ### SR Flip Flop:
-![model](DE_5.1.png)
+![DE_5 1](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/20018fc1-eefc-4034-ac4e-aa1f0a65b35b)
 
 ### D Flip Flop:
-![model](DE_5.2.png)
+![DE_5 2](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/3ae5ecf2-f131-448f-9773-8f59926bc709)
+
+
 
 ### JK Flip Flop:
-![model](DE_5.3.png)
+![DE_5 3](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/bdcc3a26-4c74-41be-bb72-d3a2d1a04933)
+
+
 
 ### T Flip Flop:
-![model](DE_5.4.png)
+![DE_5 4](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/fd46bb92-3ac7-400f-bd7a-3b8835fe575f)
 
 ## TIMING DIGRAMS FOR FLIP FLOPS
 
 ### SR Flip Flop:
-![model](DE_5.5.png)
+![DE_5 5](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/7c2713c4-b4dc-487a-b456-c81d5d949aaf)
+
+
 
 ### D Flip Flop:
-![model](DE_5.6.png)
+![DE_5 6](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/c15ee145-d770-488e-bb2e-0f5caa07257b)
+
 
 ### Jk Flip Flop:
-![model](DE_5.7.png)
+![DE_5 7](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/4137d624-5631-49a9-906b-a86775703e73)
+
+
 
 ### T Flip Flop:
-![model](DE_5.8.png)
+![DE_5 8](https://github.com/gummadileepkumar/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118707761/b29fdd29-87a0-4599-8359-527d01e21439)
+
 
 
 ### RESULTS 
